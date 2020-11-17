@@ -1,0 +1,56 @@
+<form class="layui-form layui-form-pane form_content" action="" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">学号</label>
+        <div class="layui-input-inline">
+            <input type="text" name="stu_id" lay-verify="stu_versify" placeholder="请输入学号" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名</label>
+        <div class="layui-input-inline">
+            <input type="text" name="name" lay-verify="name_versify" placeholder="请输入姓名" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">年龄</label>
+        <div class="layui-input-inline">
+            <input type="text" name="age" lay-verify="age_versify" placeholder="请输入年龄" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">邮箱</label>
+        <div class="layui-input-inline">
+            <input type="text" name="email" lay-verify="email_versify" placeholder="请输入email" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-inline">
+            <input type="password" name="password" lay-verify="password_versify" placeholder="请输入密码"
+                   autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">确认密码</label>
+        <div class="layui-input-inline">
+            <input type="password" name="confirm_password" lay-verify="password_versify|is_same"
+                   placeholder="请输入确认密码"
+                   autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item btn">
+        <button class="layui-btn layui-btn-radius layui-btn layui-btn-fluid" lay-submit="" lay-filter="register"
+                id="btn_register">注册
+        </button>
+    </div>
+</form>

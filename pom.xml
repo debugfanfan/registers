@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- pom模型版本 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 父级项目 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <!-- 项目信息 -->
+    <!-- 项目唯一标识 -->
+    <groupId>com.fan</groupId>
+    <!-- 项目名 -->
+    <artifactId>register</artifactId>
+    <!-- 项目版本 -->
+    <version>0.0.1-SNAPSHOT</version>
+    <!-- 项目的名称， Maven 产生的文档用 -->
+    <name>register</name>
+    <!-- 打包方式 （pom,war,jar） -->
+    <packaging>jar</packaging>
+    <!-- 项目的描述, Maven 产生的文档用 -->
+    <description>Demo project for Spring Boot</description>
+
+    <!-- 属性设置 -->
+    <properties>
+        <!-- jdK版本 -->
+        <java.version>1.8</java.version>
+        <!-- 编译字符编码为utf-8 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 输出字符编码为UTF-8  -->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <!-- 依赖关系 -->
+    <dependencies>
+        <!-- web的场景，自动帮我们引入了web模块开发需要的相关jar包 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--mysql的JDBC-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!--数据库连接池-->
+<!--        <dependency>-->
+<!--            <groupId>com.zaxxer</groupId>-->
+<!--            <artifactId>HikariCP</artifactId>-->
+<!--            <version>3.4.1</version>-->
+<!--        </dependency>-->
+
+        <!--谷歌的依赖-->
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- 编译 -->
+    <build>
+        <!-- 插件 -->
+        <plugins>
+            <!-- maven插件 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

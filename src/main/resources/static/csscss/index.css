@@ -1,0 +1,25 @@
+body {
+    /*background-color: #007DDB;*/
+    background-color: #2D93CA;
+}
+
+.content {
+    /*background-color: gray;*/
+    width: 310px;
+    height: 500px;
+    margin: 10% auto;
+}
+.title{
+    width: 100%;
+    height: 20%;
+}
+.form_content {
+    /*background-color: darkgreen;*/
+    width: 100%;
+    height: 80%;
+}
+
+.btn {
+    margin: 20px 50px;
+    /*padding: 20px 50px;*/
+}

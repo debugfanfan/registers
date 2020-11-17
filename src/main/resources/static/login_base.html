@@ -1,0 +1,26 @@
+<form class="layui-form layui-form-pane form_content" action="" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">学号</label>
+        <div class="layui-input-inline">
+            <input type="text" name="stu_id" lay-verify="stu_versify" placeholder="请输入学号" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-inline">
+            <input type="password" name="password" lay-verify="password_versify" placeholder="请输入密码"
+                   autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+
+
+    <div class="layui-form-item btn">
+        <button class="layui-btn layui-btn-radius layui-btn layui-btn-fluid" lay-submit="" lay-filter="login"
+                id="btn_login">登录
+        </button>
+    </div>
+</form>
