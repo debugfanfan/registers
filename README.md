@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: readme_data\image
+---
+
 # 简介
 
 利用springboot框架，简单地实现了注册与登录功能。
@@ -13,15 +17,15 @@
 
 - 注册页面
 
-  ![](./readme_data/image/注册页面.png)
+  ![](https://github.com/fanorfan/registers/readme_data/image/注册页面.png)
 
 - 登录页面
 
-  ![](./readme_data/image/登录页面.png)
+  ![](https://github.com/fanorfan/registers/readme_data/image/登录页面.png)
 
 - 登录成功页面
 
-  ![](./readme_data/image/登录成功页面.png)
+  ![](https://github.com/fanorfan/registers/readme_data/image/登录成功页面.png)
   
   # 联系人
   
