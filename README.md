@@ -13,6 +13,7 @@ typora-copy-images-to: readme_data\image
 3. 执行com/fan/register/路径下RegisterApplication.java文件中的main函数
 4. 访问http://127.0.0.1:8080/，出现如下网站页面说明程序运行成功
 
+
 # 效果图
 
 - 注册页面
